@@ -4,18 +4,15 @@
       .side_bar__user.name__top_item__name
         = current_user.name
       .side_bar__user.name__top_item__icon
-        = link_to"#", class: "btn"  do
+        = link_to new_group_path  do
           =icon('far', 'edit')
         = link_to edit_user_path(current_user)  do
           =icon('fas', 'cog')
   .side_bar__group.lists
-    .side_bar__group.lists__group.list
-      .side_bar__group.lists__group.list__group.name
-        グループ名
-      .side_bar__group.lists__group.list__group.name__last.message
-        まだメッセージなし
-    .side_bar__group.lists__group.list
-      .side_bar__group.lists__group.list__group.name
-        rar
-      .side_bar__group.lists__group.list__group.name__last.message
-        まだメッセージなし
+    -  current_user.groups.each do |group|
+      .side_bar__group.lists__group.list
+        = link_to '#' do
+          .side_bar__group.lists__group.list__group.name
+            = group.name
+          .side_bar__group.lists__group.list__group.name__last.message
+          メッセージはまだありません
