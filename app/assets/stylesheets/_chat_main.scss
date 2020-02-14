@@ -38,23 +38,23 @@
     height: calc(100vh - 100px - 90px);
     background-color: #fafafa;
     padding: 46px 40px;
-    &__list{
+    .message.list{
       margin-bottom: 35px;
-      &__update.user{
+      .upper-message{
         display: flex;
         margin-bottom: 12px;
-        &__name{
+        .upper-message__user-name{
           color: #333333;
          font-size: 16px; 
          font-weight: bold;
         }
-        &__time{
+        .upper-message__date{
           color: #999999;
           font-size: 12px;
           margin-left: 10px;
         }
       }
-      &__text{
+      .lower-message{
         color: #434A54;
         font-size: 14px;
       }

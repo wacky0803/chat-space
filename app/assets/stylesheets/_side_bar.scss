@@ -24,7 +24,7 @@
       line-height: 20px;
       display: flex;
       justify-content: flex-end;
-      font-size: 16px;
+      
       a{
         color: #ffffff;
         margin-left: 5px;
@@ -40,10 +40,13 @@
     color: #ffffff;
     &__group.list{
       margin-bottom: 40px;
+      a{
+        color: #ffffff;
+        text-decoration: none;
+      }
       &__group.name{
         font-size: 15px;
         margin-bottom: 5px;
-        font-weight: bold;
         &__last.message{
           font-size: 11px;
         }
