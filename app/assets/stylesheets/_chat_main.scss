@@ -38,6 +38,7 @@
     height: calc(100vh - 100px - 90px);
     background-color: #fafafa;
     padding: 46px 40px;
+    overflow: scroll;
     .message.list{
       margin-bottom: 35px;
       .upper-message{
